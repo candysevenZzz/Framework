@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9b1bfe0-5db7-4cdc-b93c-8ed4b5513896" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1Y1vJNzrHKZ3IvXx6WQUHkzblN9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\phpstudy\PHPTutorial\WWW\framework\core\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9b1bfe0-5db7-4cdc-b93c-8ed4b5513896" name="Default Changelist" comment="" />
+      <created>1582122841080</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582122841080</updated>
+      <workItem from="1582122842339" duration="2199000" />
+      <workItem from="1582125708979" duration="13432000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="906" y="143" key="#index.php" timestamp="1582125192864">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="906" y="143" key="#index.php/0.0.1536.834@0.0.1536.834" timestamp="1582125192864" />
+    <state x="669" y="364" key="NewPhpFileDialog" timestamp="1582135652391">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="669" y="364" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1582135652391" />
+    <state x="750" y="155" key="search.everywhere.popup" timestamp="1582123777786">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="750" y="155" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1582123777786" />
+  </component>
+</project>
