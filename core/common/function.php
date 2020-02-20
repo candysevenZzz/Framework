@@ -2,9 +2,12 @@
 if (!function_exists('p'))
 {
     //数据打印函数
-    function p(...$vars){
-        foreach ($vars as $var){
-            if (is_bool($var)){
+    function p(...$vars)
+    {
+        foreach ($vars as $var)
+        {
+            if (is_bool($var))
+            {
                 var_dump($var);
             }elseif (is_null($var)){
                 var_dump($var);
@@ -16,6 +19,6 @@ if (!function_exists('p'))
             }
         }
 
-    }  
+    }
 }
 
