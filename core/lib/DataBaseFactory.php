@@ -37,7 +37,7 @@ class DataBaseFactory
 
         if ($id === 'master')
         {
-            //获取配置文件对象
+            //获取配置文件数组
             $db_conf = Application::getInstance()->config['database'][$id];
 
         }
