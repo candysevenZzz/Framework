@@ -1,6 +1,7 @@
 <?php
 namespace core;
 use core\lib\Config;
+use core\lib\Log;
 use Exception;
 use core\lib\Route;
 
@@ -54,6 +55,9 @@ class Start{
         }else{
             throw new Exception('Can\'t fond this controller:'.$controller);
         }
+
+        //启动日志类
+        Log::init();
     }
 
     /**

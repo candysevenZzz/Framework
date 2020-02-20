@@ -5,6 +5,9 @@
  * 2.加载函数库
  * 3.启动框架
  */
+//设置时区
+ini_set('date.timezone','Asia/Shanghai');
+//根目录
 define('BASE',__DIR__);
 //核心文件目录
 define('CORE',BASE.'/core');

@@ -2,6 +2,7 @@
 namespace app\controller;
 
 use core\lib\Controller;
+use core\lib\drive\log\File;
 use core\lib\Model;
 
 class IndexController extends Controller {
@@ -41,5 +42,9 @@ class IndexController extends Controller {
             ]
             , 'index');
 
+    }
+
+    public function test3(){
+        File::log('test');
     }
 }
