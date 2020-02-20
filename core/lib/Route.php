@@ -15,7 +15,13 @@ class Route{
             //获取路由，指定对应控制器及方法
             if (isset($path[0]))
             {
-                $this->controller = $path[0];
+                if (strtolower($path[0]) !== 'index.php')
+                {
+                    $this->controller = $path[0];
+
+                }else{
+                    $this->controller = Application::getInstance()->config['route']['controller'];
+                }
                 unset($path[0]);
             }
             if (isset($path[1]))
@@ -23,7 +29,7 @@ class Route{
                 $this->action = $path[1];
                 unset($path[1]);
             }else{
-                $this->action = 'index';
+                $this->action = Application::getInstance()->config['route']['action'];
             }
 
             //获取GET请求的路由参数，并存入$_GET数组中
@@ -39,8 +45,8 @@ class Route{
             }
 
         }else{
-            $this->controller = 'index';
-            $this->action = 'index';
+            $this->controller = Application::getInstance()->config['route']['controller'];
+            $this->action = Application::getInstance()->config['route']['action'];
         }
     }
 }
