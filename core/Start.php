@@ -1,19 +1,30 @@
 <?php
 namespace core;
+use core\lib\Config;
 use Exception;
+use core\lib\Route;
 
 /**
  * Class start
  * 框架启动类
  * @package core
  */
-class start{
+class Start{
     /**
      * 加载类名数组
      * @var static array
      *
      */
     static $classMap =array();
+    /**
+     * @var Config
+     */
+    private $config;
+
+    protected function __construct()
+    {
+        $this->config = new Config(CONFIG_DIR);
+    }
 
     /**
      * 启动核心方法
@@ -22,7 +33,7 @@ class start{
     static public function run()
     {
         //获取路由对象
-        $route =new \core\lib\route();
+        $route =new Route();
         $controller = $route->controller;
         $controller = ucfirst(strtolower($controller)).'Controller';
         $action = $route->action;

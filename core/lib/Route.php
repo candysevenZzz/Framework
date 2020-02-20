@@ -1,6 +1,6 @@
 <?php
 namespace core\lib;
-class route{
+class Route{
     public $controller;
     public $action;
     public function __construct()

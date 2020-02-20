@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9b1bfe0-5db7-4cdc-b93c-8ed4b5513896" name="Default Changelist" comment="更新readme">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configs/database.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/lib/Application.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/lib/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/DataBase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/DataBaseFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/database/DataBaseInterFace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/database/MySQL.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/database/MySQLi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/database/PDO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/database/Proxy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/pattern/RegisterPattern.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/pattern/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/lib/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/lib/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/lib/Route.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Start.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +71,7 @@
       <updated>1582122841080</updated>
       <workItem from="1582122842339" duration="2199000" />
       <workItem from="1582125708979" duration="19054000" />
-      <workItem from="1582180574036" duration="9619000" />
+      <workItem from="1582180574036" duration="9876000" />
     </task>
     <task id="LOCAL-00001" summary="更新readme">
       <created>1582175698300</created>
@@ -95,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582175698300</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增数据库连接">
+      <created>1582191048149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582191048149</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增设计模式核心目录">
+      <created>1582191119739</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582191119739</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +102,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
+    <MESSAGE value="新增数据库连接" />
+    <MESSAGE value="新增设计模式核心目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增设计模式核心目录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="569" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1582183325356">
@@ -114,10 +115,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="906" y="143" key="#index.php/0.0.1536.834@0.0.1536.834" timestamp="1582125192864" />
-    <state x="236" y="29" width="1062" height="702" key="CommitChangelistDialog2" timestamp="1582191044199">
+    <state x="236" y="29" width="1228" height="702" key="CommitChangelistDialog2" timestamp="1582191117089">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="236" y="29" width="1062" height="702" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1582191044199" />
+    <state x="236" y="29" width="1228" height="702" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1582191117089" />
     <state x="146" y="35" key="DiffContextDialog" timestamp="1582191039237">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
