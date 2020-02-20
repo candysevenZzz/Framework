@@ -12,8 +12,12 @@ define('CORE',BASE.'/core');
 define('APP',BASE.'/app');
 //模块名称
 define('APP_MODULE','\app');
+//配置文件目录
+define('CONFIG_DIR',BASE.'/configs');
 //debug调试模式
 define('DEBUG',true);
+
+//是否开启调试模式
 if (DEBUG){
     ini_set('display_errors','On');
     ini_set('error_log','E:\\php_runtime\\'.date('Y-m-d').'_php_error.txt');
@@ -21,9 +25,14 @@ if (DEBUG){
     ini_set('display_errors','Off');
 }
 
-//加载基础函数库
+//引入基础函数库
 include CORE.'/common/function.php';
+
+//引入启动文件
+require CORE . '/Start.php';
+
+spl_autoload_register('\core\Start::load');
+
 //启动框架
-include CORE.'/start.php';
-spl_autoload_register('\core\start::load');
-\core\start::run();
+\core\Start::run();
+\core\lib\DataBaseFactory::getDatabase('master');

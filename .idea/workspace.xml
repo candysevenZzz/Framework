@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9b1bfe0-5db7-4cdc-b93c-8ed4b5513896" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="d9b1bfe0-5db7-4cdc-b93c-8ed4b5513896" name="Default Changelist" comment="更新readme">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/Application.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/DataBase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/DataBaseFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/database/DataBaseInterFace.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/database/MySQL.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/database/MySQLi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/database/PDO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/database/Proxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/pattern/RegisterPattern.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/pattern/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/lib/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/lib/route.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/lib/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/start.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,11 +32,21 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="framework" />
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="candysevenZzz &lt;candy_seven@163.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y1vJNzrHKZ3IvXx6WQUHkzblN9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,8 +54,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/54f3d6f40001eb2800000000" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -55,22 +85,55 @@
       <option name="presentableId" value="Default" />
       <updated>1582122841080</updated>
       <workItem from="1582122842339" duration="2199000" />
-      <workItem from="1582125708979" duration="14310000" />
+      <workItem from="1582125708979" duration="19054000" />
+      <workItem from="1582180574036" duration="9619000" />
     </task>
+    <task id="LOCAL-00001" summary="更新readme">
+      <created>1582175698300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582175698300</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="569" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1582183325356">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="569" y="103" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1582183325356" />
     <state x="906" y="143" key="#index.php" timestamp="1582125192864">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="906" y="143" key="#index.php/0.0.1536.834@0.0.1536.834" timestamp="1582125192864" />
-    <state x="669" y="364" key="NewPhpFileDialog" timestamp="1582135652391">
+    <state x="236" y="69" width="1062" height="662" key="CommitChangelistDialog2" timestamp="1582190844268">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="669" y="364" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1582135652391" />
+    <state x="236" y="69" width="1062" height="662" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1582190844268" />
+    <state x="1098" y="251" key="FileChooserDialogImpl" timestamp="1582176422262">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="1098" y="251" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1582176422262" />
+    <state x="835" y="290" key="NewPhpClassDialog" timestamp="1582176806456">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="835" y="290" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1582176806456" />
+    <state x="669" y="364" key="NewPhpFileDialog" timestamp="1582187767055">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="669" y="364" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1582187767055" />
+    <state x="423" y="205" key="Vcs.Push.Dialog.v2" timestamp="1582175710253">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="423" y="205" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1582175710253" />
     <state x="750" y="155" key="search.everywhere.popup" timestamp="1582123777786">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
