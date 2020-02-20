@@ -1,5 +1,8 @@
 <?php
 namespace core\lib;
+use core\lib\drive\log\Error;
+use core\lib\drive\log\File;
+
 class Log
 {
     private static $class;
@@ -12,9 +15,19 @@ class Log
         self::$class = new $class();
     }
 
-    static public function log($name)
+    static public function __callStatic($name, $arguments)
     {
-        $class = self::$class;
-        $class::log($name);
+        $name = strtolower($name);
+
+        //日志这块做得有点low 本来是想弄成可以选择存储介质和不同的日志(错误)状态的  没弄出来.... 想弄成TP那种 我还有点够呛...
+        if($name === 'log')
+        {
+            File::log($arguments[0]);
+        }elseif ($name === 'error')
+        {
+            Error::log($arguments[0]);
+        }else{
+            throw new \Exception('Not have this driver: '.ucfirst($name).'.php');
+        }
     }
 }

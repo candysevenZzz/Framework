@@ -3,6 +3,7 @@ namespace app\controller;
 
 use core\lib\Controller;
 use core\lib\drive\log\File;
+use core\lib\Log;
 use core\lib\Model;
 
 class IndexController extends Controller {
@@ -45,6 +46,7 @@ class IndexController extends Controller {
     }
 
     public function test3(){
-        File::log('test');
+       Log::error('这是一个错误信息');
+       Log::log('这是一个日志信息');
     }
 }

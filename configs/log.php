@@ -2,7 +2,8 @@
 return array(
     //驱动
     'drive' => 'file',
-    'option' => array(
-        'path' => BASE.'/runtime/log/'
+    'path' => array(
+        'log'  => BASE.'/runtime/log/',
+        'error' => BASE.'/runtime/error/'
     )
 );
