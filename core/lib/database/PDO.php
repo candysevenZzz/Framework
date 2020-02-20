@@ -17,16 +17,10 @@ class PDO implements DataBaseInterFace
      */
     public $type;
 
-    public function __construct($type = 'mysql')
-    {
-        $this->type = $type;
-    }
-
-
     public function connect($host, $user, $pwd, $dbname)
     {
-        p($host,$user,$pwd,$dbname);
-        $conn = new \PDO("$this->type:host=$host;dbname=$dbname",$user,$pwd);
+        $dsn = "mysql:host=$host;dbname=$dbname";
+        $conn = new \PDO($dsn, $user, $pwd);
         $this->conn = $conn;
     }
 
