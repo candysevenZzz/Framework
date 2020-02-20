@@ -53,7 +53,8 @@ class DataBaseFactory
         $key = 'database_'.$id;
         $db = RegisterPattern::get($key);
 
-        if (!$db){
+        if (!$db)
+        {
             $db = new PDO();
             $db->connect($db_conf['host'],$db_conf['dbname'],$db_conf['user'],$db_conf['password']);
             RegisterPattern::set($key,$db);
