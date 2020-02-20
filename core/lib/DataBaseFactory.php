@@ -60,7 +60,6 @@ class DataBaseFactory
         }
         return $db;
 
-
     }
 
 }

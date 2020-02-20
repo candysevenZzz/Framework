@@ -35,4 +35,3 @@ spl_autoload_register('\core\Start::load');
 
 //启动框架
 \core\Start::run();
-\core\lib\DataBaseFactory::getDatabase('master');

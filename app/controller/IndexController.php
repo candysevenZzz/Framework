@@ -4,6 +4,6 @@ namespace app\controller;
 class IndexController{
     public function index()
     {
-        echo 'This is Index';
+        \core\lib\DataBaseFactory::getDatabase('master');
     }
 }
