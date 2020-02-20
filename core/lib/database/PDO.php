@@ -19,7 +19,7 @@ class PDO implements DataBaseInterFace
 
     public function __construct($type='mysql')
     {
-        $this->type =$type;
+        $this->type = $type;
     }
 
 
