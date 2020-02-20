@@ -3,7 +3,7 @@ return array(
     //主数据库配置 写入操作
     'master' => array(
         'type'      => 'MySQL',
-        'host'      => '127.0.0.1',
+        'host'      => 'localhost',
         'user'      => 'root',
         'password'  => 'root',
         'dbname'    => 'frame',
@@ -13,7 +13,7 @@ return array(
     'slave' => array(
         'slave1' => array(
             'type'      => 'MySQL',
-            'host'      => '127.0.0.1',
+            'host'      => 'localhost',
             'user'      => 'root',
             'password'  => 'root',
             'dbname'    => 'frame',
@@ -21,7 +21,7 @@ return array(
         ),
         'slave2' => array(
             'type'      => 'Oracle',
-            'host'      => '127.0.0.1',
+            'host'      => 'localhost',
             'user'      => 'root',
             'password'  => 'root',
             'dbname'    => 'test',
@@ -29,7 +29,7 @@ return array(
         ),
         'slave3' => array(
             'type'      => 'SQLSever',
-            'host'      => '127.0.0.1',
+            'host'      => 'localhost',
             'user'      => 'root',
             'password'  => 'root',
             'dbname'    => 'test',

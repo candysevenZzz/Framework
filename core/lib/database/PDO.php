@@ -19,9 +19,8 @@ class PDO implements DataBaseInterFace
 
     public function connect($host, $user, $pwd, $dbname)
     {
-
-
-        $conn = new \PDO("$this->type:host=$host;dbname=$dbname",$user,$pwd);
+        p($host,$user,$pwd,$dbname);
+        $conn = new \PDO("mysql:host=$host;dbname=$dbname",$user,$pwd);
         $this->conn = $conn;
     }
 
