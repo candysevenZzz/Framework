@@ -25,15 +25,23 @@ class Controller
     /**
      * 视图加载方法
      * @param $view string 视图名
+     * @throws \Twig\Error\LoaderError
+     * @throws \Twig\Error\RuntimeError
+     * @throws \Twig\Error\SyntaxError
      */
     public function display($view)
     {
         $file = APP.'/view/'.$view.'.html';
         if(is_file($file))
         {
-           extract($this->assigns);
-            require $file;
+            $loader = new \Twig\Loader\FilesystemLoader( APP.'/view');
+            $twig = new \Twig\Environment($loader, [
+                'cache' => BASE.'/runtime/templates',
+            ]);
+            $template = $twig->load($view.'.html');
+            $template->display($this->assigns??'');
         }
+
     }
 
     /**

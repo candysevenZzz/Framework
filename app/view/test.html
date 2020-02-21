@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+{{ title }}
+<hr>
+<p>test模板具有线条</p>
+<p>需要注意的是，对模板页面进行结构更改后，需要清理掉已存在缓存模板，否则不会生效</p>
+<hr>
+{{ data }}
+{% endblock %}
+
