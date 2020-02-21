@@ -14,10 +14,6 @@
     "packagist": {
       "type": "composer",
       "url": "https://mirrors.aliyun.com/composer/"
-    },
-    "1": {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
     }
   }
 }
