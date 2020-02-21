@@ -44,7 +44,7 @@ class Controller
             //加载视图文件
             $template = $twig->load($view.'.html');
             //渲染数据并输出视图
-            $template->display($this->assigns??'');
+            $template->display($this->assigns??array());
 
         }
 
