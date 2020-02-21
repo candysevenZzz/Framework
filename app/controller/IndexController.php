@@ -55,7 +55,7 @@ class IndexController extends Controller {
     {
         $model =FactoryPattern::createModel('people');
         $model->test();
-        var_dump($_SERVER);
+        dump($_SERVER);exit;
 
     }
 }

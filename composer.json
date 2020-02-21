@@ -6,7 +6,7 @@
     "PHP","PHP Framework"
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.2",
     "filp/whoops": "*",
     "symfony/var-dumper": "*"
   },
