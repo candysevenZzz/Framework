@@ -27,38 +27,44 @@ class Model extends Medoo
 
     /**
      * 添加数据方法
+     * @param array $data
+     * @return bool|\PDOStatement
      */
-    public function save()
+    public function save(array $data)
     {
-        //todo
-        return $this;
+        return $this->insert($this->table, $data);
     }
 
     /**
      * 查询数据方法
+     * @param int $id
+     * @return bool|mixed
      */
-    public function find()
+    public function find(int $id)
     {
         //todo
-        return $this;
+        return $this->get($this->table, '*', array('id'=>$id));
     }
 
     /**
      * 删除数据方法
+     * @param  int $id
+     * @return bool|\PDOStatement
      */
-    public function del()
+    public function del(int $id)
     {
-        //todo
-        return $this;
+        return $this->delete($this->table, array('id'=>$id));
     }
 
     /**
      * 更新数据方法
+     * @param array $data
+     * @param array $where
+     * @return bool|\PDOStatement
      */
-    public function rewrite()
+    public function rewrite(array $data, array $where = null)
     {
-        //todo
-        return $this;
+        return $this->update($this->table, $data, $where);
     }
 
     /**
@@ -72,15 +78,15 @@ class Model extends Medoo
         {
             $where = '*';
         }
-        return $this->select($this->table,$where);
+        return $this->select($this->table, $where);
     }
 
     /**
-     * @param $tableName
+     * @param string $tableName
      * @return $this
      * 设置数据表名
      */
-    public function setTable($tableName)
+    public function setTable(string $tableName)
     {
         if (empty($this->table))
         {
