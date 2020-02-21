@@ -20,14 +20,8 @@ define('CONFIG_DIR',BASE.'/configs');
 //debug调试模式
 define('DEBUG',true);
 
-//是否开启调试模式
-if (DEBUG){
-    ini_set('display_errors','On');
-    ini_set('error_log','E:\\php_runtime\\'.date('Y-m-d').'_php_error.txt');
-}else{
-    ini_set('display_errors','Off');
-}
-
+//引入composer自动加载
+include BASE.'/vendor/autoload.php';
 //引入基础函数库
 include CORE.'/common/function.php';
 

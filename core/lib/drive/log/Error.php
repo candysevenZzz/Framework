@@ -1,6 +1,6 @@
 <?php
 namespace core\lib\drive\log;
-use core\lib\Application;
+
 use core\lib\Config;
 
 class Error extends Check
