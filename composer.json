@@ -8,5 +8,15 @@
   "require": {
     "php": ">=7.0",
     "filp/whoops": "*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    },
+    "1": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
   }
 }
