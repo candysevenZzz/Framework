@@ -34,12 +34,18 @@ class Controller
         $file = APP.'/view/'.$view.'.html';
         if(is_file($file))
         {
+            //引入模板引擎，如需更换其它引擎(smarty等)，更改当前代码块即可
+            //启动模板引擎
             $loader = new \Twig\Loader\FilesystemLoader( APP.'/view');
+            //初始化环境
             $twig = new \Twig\Environment($loader, [
                 'cache' => BASE.'/runtime/templates',
             ]);
+            //加载视图文件
             $template = $twig->load($view.'.html');
+            //渲染数据并输出视图
             $template->display($this->assigns??'');
+
         }
 
     }
