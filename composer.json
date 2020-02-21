@@ -1,0 +1,12 @@
+{
+  "name": "Candy's Framework",
+  "description": "PHP Framework",
+  "type": "framework",
+  "keywords": [
+    "PHP","PHP Framework"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "filp/whoops": "*"
+  }
+}

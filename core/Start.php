@@ -33,6 +33,23 @@ class Start{
      */
     static public function run()
     {
+
+        //是否开启调试模式
+        if (DEBUG){
+            //使用错误调试模板
+            $whoops = new \Whoops\Run;
+            $title = '框架出错啦';
+            $option = new \Whoops\Handler\PrettyPageHandler();
+            $option->setPageTitle($title);
+            $whoops->pushHandler($option);
+            $whoops->register();
+
+            ini_set('display_errors','On');
+            ini_set('error_log','E:\\php_runtime\\'.date('Y-m-d').'_php_error.txt');
+        }else{
+            ini_set('display_errors','Off');
+        }
+
         //获取路由对象
         $route =new Route();
         $controller = $route->controller;
