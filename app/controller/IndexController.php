@@ -70,6 +70,9 @@ class IndexController extends Controller {
         $model->insert('people',['id'=>9]);
         $data1 = $model->delete('people',['id'=>9]);
 
+        $list = $model->list();
+        dump($list);
+
         dump($data,$data1);
 
     }
