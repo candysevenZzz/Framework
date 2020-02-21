@@ -21,4 +21,37 @@ if (!function_exists('p'))
 
     }
 }
+if (!function_exists('post'))
+{
+	/**
+	 * @param string $name post传递方式中的键名
+	 * @param bool|string $filter 过滤规则
+	 * @param bool $default 默认值
+	 * @return bool|string
+	 */
+    function post(string $name, $filter = false, bool $default = false)
+    {
+        if (isset($_POST[$name]))
+        {
+            if ($filter)
+            {
+                switch ($filter){
+                    case 'int':
+                        if (is_numeric($_POST[$name]))
+                        {
+                        	return $_POST[$name];
+                        }
+                        break;
+
+	                default:;
+                }
+
+            }
+
+        }else{
+            return $_POST[$name];
+        }
+        return $default;
+	}
+}
 
