@@ -1,64 +1,24 @@
 <?php
 namespace core\lib;
 
-use core\lib\pattern\RegisterPattern;
-use \PDO as PDO;
+use Medoo\Medoo;
 
 /**
  * Class Model
  * @package core\lib
  * 模型基类
  */
-class Model extends PDO
+class Model extends Medoo
 {
+    /**
+     * Model constructor.
+     * @throws \Exception
+     * 所有增删改查 基于Medoo提供的基类方法
+     */
     public function __construct()
     {
-        $config = Application::getInstance()->config['database']['master'];
-        $dsn = "mysql:host={$config['host']};dbname={$config['dbname']}";
-        try {
-            parent::__construct($dsn, $config['user'], $config['password']);
-
-        }catch (\PDOException $e){
-            p($e->getMessage());
-        }
-
+       $configs= Config::all('database');
+       parent::__construct($configs);
     }
-
-    /**
-     * 添加数据方法
-     */
-    public function save()
-    {
-        //todo
-        return $this;
-    }
-
-    /**
-     * 查询数据方法
-     */
-    public function select()
-    {
-        //todo
-        return $this;
-    }
-
-    /**
-     * 删除数据方法
-     */
-    public function delete()
-    {
-        //todo
-        return $this;
-    }
-
-    /**
-     * 更新数据方法
-     */
-    public function update()
-    {
-        //todo
-        return $this;
-    }
-
 
 }

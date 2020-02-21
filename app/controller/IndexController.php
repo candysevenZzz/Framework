@@ -1,6 +1,7 @@
 <?php
 namespace app\controller;
 
+use app\model\PeopleModel;
 use core\lib\Controller;
 use core\lib\Log;
 use core\lib\Model;
@@ -56,6 +57,20 @@ class IndexController extends Controller {
         $model =FactoryPattern::createModel('people');
         $model->test();
         dump($_SERVER);exit;
+
+    }
+
+    //测试Medoo数据库模型(轻量级ORM)
+    public function test5()
+    {
+        $model = new PeopleModel();
+        $data = $model->select('people','*');
+        $model->insert('people',['id'=>7]);
+        $model->insert('people',['id'=>8]);
+        $model->insert('people',['id'=>9]);
+        $data1 = $model->delete('people',['id'=>9]);
+
+        dump($data,$data1);
 
     }
 }
