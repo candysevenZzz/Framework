@@ -11,7 +11,7 @@
     "symfony/var-dumper": "4.4.*",
     "catfan/medoo": "1.7.*",
     "ext-pdo": "*",
-    "twig/twig": "2.12.*"
+    "twig/twig": "2.14.*"
   },
   "repositories": {
     "packagist": {
